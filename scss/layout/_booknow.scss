@@ -1,0 +1,15 @@
+.booknow{
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 300px;
+    @include media-breakpoint-up('m'){
+      min-height: 436px;
+    }
+    background-color: #fbcdcc;
+  }
+}
