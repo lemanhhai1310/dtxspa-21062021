@@ -1,0 +1,21 @@
+.qa{
+  background-color: #f9f9f9;
+  $x:30px;
+  padding-top: #{$x};
+  padding-bottom: #{$x};
+  @include media-breakpoint-up('m'){
+    $x:70px;
+    padding-top: #{$x};
+    padding-bottom: #{$x};
+  }
+  &__title{
+    font-family: $font-Montserrat-Black;
+    @extend .fz-16;
+    color: #000;
+  }
+  &__desc{
+    font-family: $font-Montserrat-Medium;
+    @extend .fz-14;
+    color: #000;
+  }
+}

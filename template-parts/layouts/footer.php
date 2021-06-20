@@ -48,7 +48,7 @@
                 </div>
                 <div class="uk-width-expand">
                     <h3 class="uk-h3 footer__top__title">Mạng xã hội</h3>
-                    <div class="uk-child-width-1-3@m uk-grid-small" uk-grid>
+                    <div class="uk-child-width-auto uk-grid-small" uk-grid>
                         <div>
                             <a href=""><img src="images/social/fb.png" alt=""></a>
                         </div>

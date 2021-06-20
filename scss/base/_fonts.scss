@@ -22,6 +22,20 @@
   font-weight:normal;
   font-style:normal;
 }
+@font-face{
+  font-family:'Montserrat Black';
+  font-display: auto;
+  src:local('Montserrat Black'), url('fonts/Montserrat/Montserrat-Black.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'Montserrat Medium';
+  font-display: auto;
+  src:local('Montserrat Medium'), url('fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
 /**
  * --------------------------------------------------------------------
  * Cormorant
@@ -31,6 +45,13 @@
   font-family:'Cormorant SemiBold';
   font-display: auto;
   src:local('Cormorant SemiBold'), url('fonts/Cormorant/Cormorant-SemiBold.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'Cormorant Medium';
+  font-display: auto;
+  src:local('Cormorant Medium'), url('fonts/Cormorant/Cormorant-Medium.ttf') format('truetype');
   font-weight:normal;
   font-style:normal;
 }
