@@ -1,14 +1,39 @@
 .footer{
   background-color: #3c1f18;
   &__top{
-
+    @include media-breakpoint-up('m'){
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    &__title{
+      font-family: $font-Cormorant-SemiBold;
+      @extend .fz-30;
+    }
+    &__address{
+      &__txt1{
+        color: #efcdb0;
+        @extend .fz-20;
+        font-family: $font-Cormorant-SemiBold;
+        display: inline-block;
+        min-width: 49px;
+        position: relative;
+        top: -2px;
+        @include media-breakpoint-up('m'){
+          top: -3px;
+        }
+      }
+      &__txt2{
+        @extend .fz-14;
+      }
+    }
   }
   &__bottom{
     border-top: 1px solid #b98361;
     padding-top: 10px;
     padding-bottom: 10px;
     @include media-breakpoint-up('m'){
-
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
     &__txt{
       color: #efeded;
