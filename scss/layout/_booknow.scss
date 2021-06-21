@@ -12,4 +12,20 @@
     }
     background-color: #fbcdcc;
   }
+  &__btn{
+    width: 100%;
+    @extend .fz-16;
+    text-transform: inherit;
+  }
+  &__featuresList{
+    >li{
+      position: relative;
+      padding-left: 25px;
+      @extend .box1__desc;
+      .uk-icon{
+        top: 2px;
+        color: #f48380;
+      }
+    }
+  }
 }
