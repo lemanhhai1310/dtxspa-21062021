@@ -1,0 +1,12 @@
+.about{
+  padding-top: 40px;
+  &__boxImg{
+    height: 46px;
+    margin-bottom: 6px;
+  }
+  &__txt{
+    color: #000;
+    @extend .fz-20;
+    font-family: $font-Cormorant-Bold;
+  }
+}
