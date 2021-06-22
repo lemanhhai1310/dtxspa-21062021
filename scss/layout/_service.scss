@@ -1,0 +1,16 @@
+.service{
+  background-color: #f7f7f7;
+  &__card{
+    > *{
+      &:nth-child(n+2){
+        margin: 0;
+        margin-top: 20px;
+      }
+    }
+    &__title{
+      color: #000;
+      @extend .fz-33;
+      font-family: $font-Cormorant-Bold;
+    }
+  }
+}

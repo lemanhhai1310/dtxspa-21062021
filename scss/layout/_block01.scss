@@ -28,6 +28,24 @@
       text-align: center;
       $x:25px;
       padding: #{$x};
+      position: relative;
+      &__circle{
+        $x:21px;
+        $y:5px;
+        width: #{$x};
+        height: #{$x};
+        border-radius: 50%;
+        display: inline-block;
+        background-color: #efcdb0;
+        &.uk-position-top-left{
+          top: -#{$y};
+          left: -#{$y};
+        }
+        &.uk-position-bottom-right{
+          bottom: -#{$y};
+          right: -#{$y};
+        }
+      }
       &__txt1{
         color: #000;
         @extend .fz-16;

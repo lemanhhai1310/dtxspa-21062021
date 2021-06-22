@@ -104,6 +104,8 @@
                     </div>
                     <div class="block01__video__box1">
                         <div class="uk-card uk-card-default uk-card-body block01__video__card">
+                            <span class="block01__video__card__circle uk-position-top-left"></span>
+                            <span class="block01__video__card__circle uk-position-bottom-right"></span>
                             <div class="block01__video__card__txt1"><?= $v['title'] ?></div>
                             <div class="block01__video__card__txt2">Relaxing today</div>
                         </div>
