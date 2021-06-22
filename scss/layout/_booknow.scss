@@ -22,8 +22,9 @@
     }
   }
   &__title{
+    color: #000;
     margin: 0;
-    @extend .fz-36;
+    @extend .fz-39;
     font-family: $font-Cormorant-Medium;
   }
   &__price{

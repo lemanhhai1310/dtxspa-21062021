@@ -1,9 +1,20 @@
 .box1{
   $x:45px;
+  &__marginXlarge{
+    &:nth-child(n+2){
+      margin-top: 70px;
+      @include media-breakpoint-up('m'){
+        margin-top: 140px;
+      }
+    }
+  }
   &__margin{
     margin-bottom: 40px;
     @include media-breakpoint-up('m'){
-      margin-bottom: 70px;
+      margin-bottom: 50px;
+      .qa &{
+        margin-bottom: 70px;
+      }
     }
   }
   &__box{
