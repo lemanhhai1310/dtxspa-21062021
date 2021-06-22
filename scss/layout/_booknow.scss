@@ -1,5 +1,41 @@
 .booknow{
   position: relative;
+  &__boxForm{
+    background-color: #fffaf6;
+    border: 1px solid #f7ebe3;
+    @include media-breakpoint-up('m'){
+      $x:70px;
+      padding-left: #{$x};
+      padding-right: #{$x};
+    }
+    &__title{
+      @extend .fz-39;
+      font-family: $font-Cormorant-Medium;
+      color: #000;
+    }
+    &__label{
+      @extend .fz-16;
+      font-family: $font-Montserrat-SemiBold;
+      color: #000;
+    }
+    .uk-input,.uk-textarea,.booknow__boxForm__btnSelect{
+      background-color: #ffdfc4;
+      border-color: #b98361;
+      color: #000;
+      &::placeholder{
+        color: #000;
+      }
+    }
+    &__btnSelect{
+      background-color: #fff;
+      text-transform: inherit;
+      position: relative;
+      text-align: left;
+      .uk-icon{
+        right: 10px;
+      }
+    }
+  }
   &:before{
     content: "";
     position: absolute;
@@ -13,9 +49,14 @@
     background-color: #fbcdcc;
   }
   &__btn{
-    width: 100%;
+    //width: 100%;
     @extend .fz-16;
     text-transform: inherit;
+    .booknow__boxForm &{
+      background-color: #fff;
+      border-color: #b98361;
+      color: #b98361;
+    }
     .uk-active &{
       border-color: #b98361;
       color: #b98361;

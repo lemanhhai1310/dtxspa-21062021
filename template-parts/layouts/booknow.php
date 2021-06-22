@@ -78,7 +78,7 @@
                                     </ul>
                                 </div>
                                 <div>
-                                    <a href="" class="uk-button uk-button-default booknow__btn">Đặt ngay</a>
+                                    <a href="" class="uk-button uk-button-default uk-width-1-1 booknow__btn">Đặt ngay</a>
                                 </div>
                             </div>
                         </div>
@@ -99,8 +99,85 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-card uk-card-body uk-card-default">
+                <div class="uk-card uk-card-body uk-card-default booknow__boxForm">
+                    <form>
+                        <fieldset class="uk-fieldset">
 
+                            <legend class="uk-legend uk-text-center booknow__boxForm__title">ĐIỀN THÔNG TIN</legend>
+
+                            <div class="uk-margin-medium">
+                                <div class="uk-grid-small" uk-grid>
+                                    <div class="uk-width-1-3@s">
+                                        <div class="uk-form-stacked">
+                                            <label class="uk-form-label booknow__boxForm__label" for="form-stacked-text">Đặt ngày</label>
+                                            <div class="uk-form-controls">
+                                                <div class="uk-inline uk-width-1-1">
+                                                    <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: calendar"></span>
+                                                    <input class="uk-input" id="form-stacked-text" type="date" placeholder="dd/mm/yyyy">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-3@s">
+                                        <div class="uk-form-stacked">
+                                            <label class="uk-form-label booknow__boxForm__label" for="form-stacked-text">Số người</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input" id="form-stacked-text" type="number" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-3@s">
+                                        <div class="uk-form-stacked">
+                                            <label class="uk-form-label booknow__boxForm__label" for="form-stacked-text">Chọn dịch vụ</label>
+                                            <div class="uk-form-controls">
+                                                <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
+                                                    <select>
+                                                        <option value="">Please select...</option>
+                                                        <option value="1">Option 01</option>
+                                                        <option value="2">Option 02</option>
+                                                        <option value="3">Option 03</option>
+                                                        <option value="4">Option 04</option>
+                                                    </select>
+                                                    <button class="uk-button uk-width-1-1 uk-button-default booknow__boxForm__btnSelect" type="button" tabindex="-1">
+                                                        <span></span>
+                                                        <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin-medium">
+                                <div class="uk-form-stacked">
+                                    <label class="uk-form-label booknow__boxForm__label" for="form-stacked-text">THÔNG TIN CÁ NHÂN</label>
+                                    <div class="uk-form-controls">
+                                        <div class="uk-grid-small" uk-grid>
+                                            <div class="uk-width-1-3@s">
+                                                <input class="uk-input" type="text" placeholder="Input">
+                                            </div>
+                                            <div class="uk-width-1-3@s">
+                                                <input class="uk-input" type="text" placeholder="Input">
+                                            </div>
+                                            <div class="uk-width-1-3@s">
+                                                <input class="uk-input" type="text" placeholder="Input">
+                                            </div>
+                                            <div class="uk-width-1-1">
+                                                <textarea class="uk-textarea" rows="7" placeholder="Textarea"></textarea>
+                                            </div>
+                                            <div class="uk-width-1-1">
+                                                <div class="uk-text-right">
+                                                    <button type="submit" class="uk-button uk-button-default booknow__btn">Đặt ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>
