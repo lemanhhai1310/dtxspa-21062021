@@ -1,0 +1,5 @@
+.promotion{
+  @include media-breakpoint-up('m'){
+    min-height: 454px;
+  }
+}
