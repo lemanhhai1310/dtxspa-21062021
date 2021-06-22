@@ -1,0 +1,26 @@
+.block01{
+  &__blog{
+    &__card{
+
+    }
+    &__overlay{
+      background: rgba(244,131,128,.9);
+    }
+    &__link{
+      $x:60px;
+      width: #{$x};
+      height: #{$x};
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__btnLoadmore{
+      font-family: $font-Montserrat-Medium;
+      @extend .fz-16;
+      color: #f48380;
+      border-color: #b98361;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-<div class="uk-section booknow" uk-height-viewport>
+<div class="uk-section booknow">
     <div class="uk-position-relative">
         <div class="uk-container">
             <div class="box1__marginXlarge">
