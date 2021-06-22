@@ -60,9 +60,14 @@
                 );
                 foreach ($data as $k => $v): ?>
                 <div>
-                    <div class="uk-card uk-card-default uk-card-body uk-flex uk-flex-column">
-                        <div>
-
+                    <div class="uk-card uk-card-default uk-card-body uk-flex uk-flex-column <?= ($k === 1) ? 'uk-active' : '' ?>">
+                        <div class="booknow__box1">
+                            <h3 class="uk-h3 booknow__title"><?= $v['namePack'] ?></h3>
+                            <div>
+                                <sup class="booknow__txtDola">$</sup>
+                                <span class="booknow__price"><?= $v['price'] ?></span>
+                                <span class="booknow__txtDate">/month</span>
+                            </div>
                         </div>
                         <div class="uk-flex-auto">
                             <ul class="uk-list booknow__featuresList">

@@ -16,6 +16,34 @@
     width: 100%;
     @extend .fz-16;
     text-transform: inherit;
+    .uk-active &{
+      border-color: #b98361;
+      color: #b98361;
+    }
+  }
+  &__title{
+    margin: 0;
+    @extend .fz-36;
+    font-family: $font-Cormorant-Medium;
+  }
+  &__price{
+    @extend .fz-42;
+    color: #f48380;
+    font-family: $font-Montserrat-Medium;
+  }
+  &__txtDola{
+    position: relative;
+    top: -16px;
+    @extend .fz-16;
+  }
+  &__txtDate{
+    @extend .fz-16;
+  }
+  &__box1{
+    $x:25px;
+    padding-bottom: #{$x};
+    margin-bottom: #{$x};
+    border-bottom: 2px dashed #e9e9e9;
   }
   &__featuresList{
     >li{
