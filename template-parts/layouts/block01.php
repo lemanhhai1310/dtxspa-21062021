@@ -76,6 +76,41 @@
                     </div>
                 </div>
             </div>
+            <div class="uk-child-width-1-4@m uk-grid-small uk-grid-25-m" uk-grid>
+                <?php
+                $data = array(
+                    array(
+                        'src' => 'images/video/Layer9.png',
+                        'title' => 'Spa & Massage',
+                    ),
+                    array(
+                        'src' => 'images/video/Layer10.png',
+                        'title' => 'Spa & Massage',
+                    ),
+                    array(
+                        'src' => 'images/video/Layer11.png',
+                        'title' => 'Clip Youtube',
+                    ),
+                    array(
+                        'src' => 'images/video/Layer12.png',
+                        'title' => 'Clip Youtube',
+                    ),
+                );
+                foreach ($data as $k => $v): ?>
+                <div>
+                    <div class="uk-cover-container">
+                        <img src="<?= $v['src'] ?>" alt="" uk-cover>
+                        <canvas width="281" height="349"></canvas>
+                    </div>
+                    <div class="block01__video__box1">
+                        <div class="uk-card uk-card-default uk-card-body block01__video__card">
+                            <div class="block01__video__card__txt1"><?= $v['title'] ?></div>
+                            <div class="block01__video__card__txt2">Relaxing today</div>
+                        </div>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+            </div>
         </div>
     </div>
 </div>

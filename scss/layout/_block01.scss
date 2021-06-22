@@ -23,4 +23,26 @@
       border-color: #b98361;
     }
   }
+  &__video{
+    &__card{
+      text-align: center;
+      $x:25px;
+      padding: #{$x};
+      &__txt1{
+        color: #000;
+        @extend .fz-16;
+        font-family: $font-Montserrat-Medium;
+      }
+      &__txt2{
+        color: #8e8e8e;
+        @extend .fz-14;
+      }
+    }
+    &__box1{
+      $X:30px;
+      padding-left: #{$X};
+      padding-right: #{$X};
+      margin-top: -#{$X};
+    }
+  }
 }
