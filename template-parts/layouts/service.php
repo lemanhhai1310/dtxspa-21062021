@@ -1,4 +1,4 @@
-<div class="service uk-section">
+<div id="service" class="service uk-section">
     <div class="uk-container">
         <div class="box1__margin">
             <div class="uk-flex-center" uk-grid>

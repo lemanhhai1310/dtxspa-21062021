@@ -62,18 +62,18 @@
                 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
 
                     <div class="uk-navbar-left">
-                        <a href="" class="uk-navbar-item uk-logo"><img src="images/Logo.png" alt=""></a>
+                        <a href="." class="uk-navbar-item uk-logo"><img src="images/Logo.png" alt=""></a>
                     </div>
 
                     <div class="uk-navbar-right">
-                        <ul class="uk-navbar-nav">
-                            <li class="uk-active"><a href="#">Giới thiệu</a></li>
-                            <li><a href="#">Dịch vụ</a></li>
-                            <li><a href="#">Khuyến mại</a></li>
-                            <li><a href="#">Blog làm đẹp</a></li>
-                            <li><a href="#">Thư viện</a></li>
-                            <li><a href="#">Hỏi đáp</a></li>
-                            <li><a href="#">Liên hệ</a></li>
+                        <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 90">
+                            <li class="uk-active"><a href="#about">Giới thiệu</a></li>
+                            <li><a href="#service">Dịch vụ</a></li>
+                            <li><a href="#promotion">Khuyến mại</a></li>
+                            <li><a href="#blog">Blog làm đẹp</a></li>
+                            <li><a href="#library">Thư viện</a></li>
+                            <li><a href="#qa">Hỏi đáp</a></li>
+                            <li><a href="#footer">Liên hệ</a></li>
                         </ul>
                         <div>
                             <a class="uk-navbar-toggle header__bottom__navItem" href="#" uk-search-icon></a>

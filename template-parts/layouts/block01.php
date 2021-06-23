@@ -1,6 +1,6 @@
 <div class="uk-section block01">
     <div class="uk-container">
-        <div class="box1__marginXlarge">
+        <div id="blog" class="box1__marginXlarge">
             <div class="box1__margin">
                 <div class="uk-flex-center" uk-grid>
                     <div class="uk-width-2-3@m">
@@ -62,7 +62,7 @@
         <div class="box1__marginXlarge">
 
         </div>
-        <div class="box1__marginXlarge">
+        <div id="library" class="box1__marginXlarge">
             <div class="box1__margin">
                 <div class="uk-flex-center" uk-grid>
                     <div class="uk-width-2-3@m">

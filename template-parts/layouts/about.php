@@ -1,4 +1,4 @@
-<div class="about uk-overflow-hidden">
+<div id="about" class="about uk-overflow-hidden">
     <div class="uk-container">
         <div class="uk-grid-match" uk-grid>
             <div class="uk-width-expand">

@@ -1,4 +1,4 @@
-<div class="uk-flex uk-flex-middle uk-background-norepeat uk-background-center-center promotion" data-src="images/bg-samp.jpeg" uk-img>
+<div id="promotion" class="uk-flex uk-flex-middle uk-background-norepeat uk-background-center-center promotion" data-src="images/bg-samp.jpeg" uk-img>
     <div class="uk-section uk-width-1-1">
         <div class="uk-container">
             <div class="box1__margin">
