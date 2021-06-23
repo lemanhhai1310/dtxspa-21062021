@@ -1,0 +1,19 @@
+.header{
+  &__top{
+    background-color: #b98361;
+    &__right{
+      background-color: #3c1f18;
+    }
+    &__navItem{
+      $x:35px;
+      min-height: #{$x};
+    }
+    &__txt{
+      @extend .fz-12;
+      font-family: $font-Montserrat-SemiBold;
+    }
+  }
+  &__bottom{
+    background-color: #fff;
+  }
+}

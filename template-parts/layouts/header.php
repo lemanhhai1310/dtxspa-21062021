@@ -21,3 +21,63 @@
 <body class="<?= ($is_home) ? 'isHome' : '' ?>">
 <?php require "template-parts/commons/facebook_chat.php"; ?>
 <section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+<header class="header">
+    <div class="header__top uk-light">
+        <div class="uk-container">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-left">
+                    <div class="uk-navbar-item header__top__navItem">
+                        <div class="uk-child-width-auto" uk-grid>
+                            <div>
+                                <span uk-icon="icon: location; ratio: 0.8"></span>
+                                <span class="uk-margin-small-left header__top__txt">3A Quân Trấn, Hùng Vương, Tp. Nha Trang</span>
+                            </div>
+                            <div>
+                                <span uk-icon="icon: receiver; ratio: 0.8"></span>
+                                <span class="uk-margin-small-left header__top__txt">+84 1234 567890</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-navbar-right">
+                    <div class="uk-navbar-item header__top__navItem header__top__right">
+                        <!--Code social-->
+                        <div class="uk-child-width-auto uk-grid-5" uk-grid>
+                            <?php
+                            $data = array('facebook','youtube','tiktok','instagram','google','tripadvisor');
+                            foreach ($data as $k => $v): ?>
+                                <div>
+                                    <a href="" uk-icon="icon: <?= $v ?>; ratio: 0.95"></a>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="header__bottom">
+        <div class="uk-container uk-padding-remove">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+
+                <div class="uk-navbar-left">
+                    <a href="" class="uk-navbar-item uk-logo"><img src="images/Logo.png" alt=""></a>
+                </div>
+
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Dịch vụ</a></li>
+                        <li><a href="#">Khuyến mại</a></li>
+                        <li><a href="#">Blog làm đẹp</a></li>
+                        <li><a href="#">Thư viện</a></li>
+                        <li><a href="#">Hỏi đáp</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+
+                </div>
+
+            </nav>
+        </div>
+    </div>
+</header>
