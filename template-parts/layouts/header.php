@@ -47,7 +47,7 @@
                             $data = array('facebook','youtube','tiktok','instagram','google','tripadvisor');
                             foreach ($data as $k => $v): ?>
                                 <div>
-                                    <a href="" uk-icon="icon: <?= $v ?>; ratio: 0.95"></a>
+                                    <a href="" uk-icon="icon: <?= $v ?>; ratio: 0.8"></a>
                                 </div>
                             <?php endforeach; ?>
                         </div>
@@ -56,28 +56,55 @@
             </nav>
         </div>
     </div>
-    <div class="header__bottom">
-        <div class="uk-container uk-padding-remove">
-            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+    <div uk-sticky="animation: uk-animation-slide-top;cls-active: classSticky">
+        <div class="header__bottom">
+            <div class="uk-container uk-padding-remove">
+                <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
 
-                <div class="uk-navbar-left">
-                    <a href="" class="uk-navbar-item uk-logo"><img src="images/Logo.png" alt=""></a>
-                </div>
+                    <div class="uk-navbar-left">
+                        <a href="" class="uk-navbar-item uk-logo"><img src="images/Logo.png" alt=""></a>
+                    </div>
 
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
-                        <li class="uk-active"><a href="#">Giới thiệu</a></li>
-                        <li><a href="#">Dịch vụ</a></li>
-                        <li><a href="#">Khuyến mại</a></li>
-                        <li><a href="#">Blog làm đẹp</a></li>
-                        <li><a href="#">Thư viện</a></li>
-                        <li><a href="#">Hỏi đáp</a></li>
-                        <li><a href="#">Liên hệ</a></li>
-                    </ul>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Dịch vụ</a></li>
+                            <li><a href="#">Khuyến mại</a></li>
+                            <li><a href="#">Blog làm đẹp</a></li>
+                            <li><a href="#">Thư viện</a></li>
+                            <li><a href="#">Hỏi đáp</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                        <div>
+                            <a class="uk-navbar-toggle header__bottom__navItem" href="#" uk-search-icon></a>
+                            <div class="uk-navbar-dropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
 
-                </div>
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-expand">
+                                        <form class="uk-search uk-search-navbar uk-width-1-1">
+                                            <input class="uk-search-input" type="search" placeholder="Search" autofocus>
+                                        </form>
+                                    </div>
+                                    <div class="uk-width-auto">
+                                        <a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+                                    </div>
+                                </div>
 
-            </nav>
+                            </div>
+                        </div>
+                        <div class="uk-navbar-item header__bottom__navItem">
+                            <a href="" class="uk-button uk-button-default header__bottom__btnBook">Book now</a>
+                        </div>
+                        <div class="uk-navbar-item header__bottom__navItem">
+                            <div>
+                                <div><a href=""><img src="images/en.png" alt=""></a></div>
+                                <div><a href=""><img src="images/vi.png" alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
         </div>
     </div>
 </header>

@@ -15,5 +15,35 @@
   }
   &__bottom{
     background-color: #fff;
+    &__btnBook{
+      text-transform: inherit;
+      @extend .fz-16;
+      color: #b98361;
+      border-color: #b98361;
+    }
+    .classSticky &{
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+    &__navItem{
+      $x:90px;
+      min-height: #{$x};
+    }
+    .uk-logo{
+      @extend .header__bottom__navItem;
+      img{
+        height: 60px;
+      }
+    }
+    .uk-navbar-nav{
+      >li{
+        >a{
+          font-family: $font-Montserrat-Medium;
+          @extend .fz-16;
+          color: #000;
+          text-transform: inherit;
+          @extend .header__bottom__navItem;
+        }
+      }
+    }
   }
 }
